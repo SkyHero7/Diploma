@@ -17,7 +17,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Запуск тестов
-unittest.TextTestRunner(verbosity=2).run(unittest.TestLoader().loadTestsFromModule(tests))
+unittest.TextTestRunner(verbosity=2).run(
+    unittest.TestLoader().loadTestsFromModule(tests))
 
 # Настройка бота
 bot = Bot(token=environ.get('TELEGRAM_ACCESS_TOKEN'))

@@ -1,4 +1,4 @@
-# Мой Проект
+# Дипломный проект
 
 ## Описание
 
@@ -21,4 +21,12 @@
 ```bash
 git clone https://github.com/SkyHero7/Diploma
 cd Diplom
+```
+Загружаем в локальную базу данных файл с данными sample_collection.bson, с помощью команды:
+```commandline
+python load_bson.py
+```
+После этого запускаем проект 
+```commandline
+python manage.py
 ```
